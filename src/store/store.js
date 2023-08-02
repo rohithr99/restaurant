@@ -20,9 +20,9 @@ const middleware = [thunk];
 
 
 //create store
-const store = createStore(reducers,applyMiddleware(...middleware));
+const restStore = createStore(reducers,applyMiddleware(...middleware));
 //spread operator is used to add all the middlewares to the variable. here it is only one middleware.
 
 
 //export
-export default store;
+export default restStore;
